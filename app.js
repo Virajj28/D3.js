@@ -1,3 +1,4 @@
+// Add any dummy data to validate graph
 const Dummy_Data = [
   { id: 1, value: 10, region: 'North America' },
   { id: 2, value: 2, region: 'South America' },
@@ -5,6 +6,7 @@ const Dummy_Data = [
   { id: 4, value: 8, region: 'Asia' },
 ];
 
+// Scaling to fit the graph on x and y axis
 const xScale = d3
   .scaleBand()
   .domain(Dummy_Data.map(d => d.region))
