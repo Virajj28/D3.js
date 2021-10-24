@@ -18,8 +18,10 @@ const yScale = d3
   .domain([0, 15])
   .range([200, 0]);
 
+// Container for the graph
 const container = d3.select('svg').classed('container',true);
 
+// Understand the whole working of the framework
 const bars = container
   .selectAll('.bar')
   .data(Dummy_Data)
